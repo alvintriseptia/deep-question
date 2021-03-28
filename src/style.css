@@ -1,0 +1,62 @@
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+
+    :root{
+        --main-text:#0B132A;
+        --main-subtext:#4F5665;
+        --color-btn:#F53855;
+    }
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color:#F6F6F6;
+        font-family: 'Rubik', sans-serif;
+        color:var(--main-subtext);
+    }
+
+    .bg-signUp{
+        border:1px solid var(--color-btn);
+        border-radius:50px;
+        color:var(--color-btn);
+    }
+    .bg-signUp:hover{
+        transition:ease-out 0.2s;
+        border:none;
+        color:#fff;
+        background-color: var(--color-btn);
+        box-shadow: 1px 10px 20px rgba(245, 56, 56,0.35);
+    }
+    .hero .bg-getS{
+        background-color: var(--color-btn);
+        box-shadow: 5px 15px 30px rgba(245, 56, 56,0.35);
+        border-radius: 10px;
+        color: #fff;
+    }
+    .hero .bg-getS:hover{
+        background-color: #e6334e;
+        transition: 0.2s;
+    }
+
+    .hambClick{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media only screen and (min-width:768){
+        nav a:hover{
+            border-bottom:2px solid var(--color-btn);
+            transition: 0.1s;
+        }
+        nav a.active{
+            border-bottom:2px solid var(--color-btn);
+        }
+    
+    }
+
+@tailwind utilities;
