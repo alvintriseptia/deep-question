@@ -1,141 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- ... -->
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <!-- ... -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Tailwind CSS -->
-  <link href="./src/tailwind.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="./src/tailwind.css" rel="stylesheet" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./src/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/style.css" />
 
-  <!-- Rubik Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Rubik Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Deep Question</title>
-</head>
-<body class="md:container mx-auto ">
+    <title>Deep Question</title>
+  </head>
+  <body class="md:container mx-auto">
     <!-- Header Start -->
     <header class="py-6 mx-8 lg:mx-24">
-        <!-- Nav start -->
-        <nav class="flex flex-col lg:flex-row lg:justify-around">
-            <div class="logo flex justify-between items-center lg:flex-1">
-                <p class="text-3xl text-black">𝕯𝖊𝖊𝖕 𝕼𝖚𝖊𝖘𝖙𝖎𝖔𝖓</p>
-                <p class= "lg:hidden text-4xl cursor-pointer" id="hambBtn">=</p>
-            </div>
-            <div id="mobile-menu" class="hidden lg:flex lg:flex-auto p-2">
-                <div class="flex flex-col content-around lg:flex-row lg:flex-auto lg:justify-evenly lg:items-center">
-                    <a class="mb-2 lg:mb-0 lg:active" href="#home">Home</a>
-                    <a class="mb-2 lg:mb-0" href="#about">About</a>
-                    <a class="mb-2 lg:mb-0" href="#features">Features</a>
-                    <a class="mb-2 lg:mb-0" href="#testimonials">Testimonials</a>
-                    <a class="mb-2 lg:mb-0" href="#help">Help</a>
-                </div>
-                <div class="account my-2 lg:my-0 flex justify-around lg:flex lg:flex-col lg:flex-1 lg:items-center xl:flex-row xl:justify-end">
-                    <button class="w-20 lg:mb-3 xl:mb-0">Sign In</button>
-                    <button class="lg:ml-4 w-36 h-12 bg-signUp">Sign Up</button>
-                </div>
-            </div>
-        </nav>
-        <!-- Nav end -->
-        
-        <!-- Hero start -->
-        <section class="hero md:grid md:grid-cols-2 mt-6 md:mt-16 py-8 md:py-16 place-content-center">
-            <div class="left-side mr-5 flex flex-col justify-center md:block">
-                <div class="title mb-14">
-                    <h1 class="text-3xl md:text-6xl md:leading-relaxed text-black text-center md:text-left mb-6">Knows Yourself With Our <span class="text-black font-bold">Deep Question</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, aspernatur? Facere ipsa ipsam illo ab vitae quia quas eaque doloribus.</p>
-                </div>
-                <button class="w-60 h-14 p-2.5 bg-getS self-center">Get Started</button>
-            </div>
-            <div class="right-side hidden md:block">
-                <img src="./src/img/hero.png" alt="Man with laptop">
-            </div>
-        </section>
-        <!--Hero end  -->
+      <!-- Nav start -->
+      <nav class="flex flex-col lg:flex-row lg:justify-around">
+        <div class="logo flex justify-between items-center lg:flex-1">
+          <p class="text-3xl text-black">𝕯𝖊𝖊𝖕 𝕼𝖚𝖊𝖘𝖙𝖎𝖔𝖓</p>
+          <p class="lg:hidden text-4xl cursor-pointer" id="hambBtn">=</p>
+        </div>
+        <div id="mobile-menu" class="hidden lg:flex lg:flex-auto p-2">
+          <div
+            class="flex flex-col content-around lg:flex-row lg:flex-auto lg:justify-evenly lg:items-center"
+          >
+            <a class="mb-2 lg:mb-0 lg:active hover:bg-purple-200" href="#home"
+              >Home</a
+            >
+            <a class="mb-2 lg:mb-0 hover:bg-purple-200" href="#about">About</a>
+            <a class="mb-2 lg:mb-0 hover:bg-purple-200" href="#features"
+              >Features</a
+            >
+            <a class="mb-2 lg:mb-0 hover:bg-purple-200" href="#testimonials"
+              >Testimonials</a
+            >
+            <a class="mb-2 lg:mb-0 hover:bg-purple-200" href="#help">Help</a>
+          </div>
+          <div
+            class="account my-2 lg:my-0 flex justify-around lg:flex lg:flex-col lg:flex-1 lg:items-center xl:flex-row xl:justify-end"
+          >
+            <button class="w-20 lg:mb-3 xl:mb-0">Sign In</button>
+            <button class="lg:ml-4 w-36 h-12 bg-signUp">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav end -->
 
-        <!-- About start -->
-        <section id="about" class="about">
-            <div class="container bg-white py-10 shadow-lg rounded-xl">
-                <div class="grid md:grid-cols-12 ">
-                    <div class="col-span-4 flex flex-col md:flex-row items-center justify-center md:border-r-2 md:mx-3 mb-4 md:mb-0">
-                        <img src="./src/img/Icon/user.png" alt="">
-                        <div class="text text-center md:text-base md:ml-3">
-                            <h5 class="text-black font-bold">90+</h5>
-                            <p>Users</p>
-                        </div>
-                    </div>
-                    <div class="col-span-4 flex flex-col md:flex-row items-center justify-center md:border-r-2 md:mx-3 mb-4 md:mb-0">
-                        <img src="./src/img/Icon/location.png" alt="">
-                        <div class="text text-center md:text-base md:ml-3">
-                            <h5 class="text-black font-bold">30+</h5>
-                            <p>Locations</p>
-                        </div>
-                    </div>
-                    <div class="col-span-4 flex flex-col md:flex-row items-center justify-center">
-                        <img src="./src/img/Icon/Server.png" alt="">
-                        <div class="text text-center md:text-base md:ml-3">
-                            <h5 class="text-black font-bold">50+</h5>
-                            <p>Servers</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Hero start -->
+      <section
+        class="hero md:grid md:grid-cols-2 mt-6 md:mt-16 py-8 md:py-16 place-content-center"
+      >
+        <div class="left-side mr-5 flex flex-col justify-center md:block">
+          <div class="title mb-14">
+            <h1
+              class="text-3xl md:text-6xl md:leading-relaxed text-black text-center md:text-left mb-6"
+            >
+              Knows Yourself With Our
+              <span class="text-black font-bold">Deep Question</span>
+            </h1>
+            <p>
+              We provide some question to help you know yourself with answer the
+              question carefully and honestly.
+            </p>
+          </div>
+          <button class="w-60 h-14 p-2.5 bg-getS self-center">
+            Get Started
+          </button>
+        </div>
+        <div class="right-side hidden md:block">
+          <img src="./src/img/hero.png" alt="Man with laptop" />
+        </div>
+      </section>
+      <!--Hero end  -->
+
+      <!-- About start -->
+      <section id="about" class="about">
+        <div class="container bg-white py-10 shadow-lg rounded-xl">
+          <div class="grid md:grid-cols-12">
+            <div
+              class="col-span-4 flex flex-col md:flex-row items-center justify-center md:border-r-2 md:mx-3 mb-4 md:mb-0"
+            >
+              <img src="./src/img/Icon/user.png" alt="" />
+              <div class="text text-center md:text-base md:ml-3">
+                <h5 class="text-black font-bold">90+</h5>
+                <p>Users</p>
+              </div>
             </div>
-        </section>
-        <!-- About end -->
+            <div
+              class="col-span-4 flex flex-col md:flex-row items-center justify-center md:border-r-2 md:mx-3 mb-4 md:mb-0"
+            >
+              <img src="./src/img/Icon/location.png" alt="" />
+              <div class="text text-center md:text-base md:ml-3">
+                <h5 class="text-black font-bold">300+</h5>
+                <p>Questions</p>
+              </div>
+            </div>
+            <div
+              class="col-span-4 flex flex-col md:flex-row items-center justify-center"
+            >
+              <img src="./src/img/Icon/Server.png" alt="" />
+              <div class="text text-center md:text-base md:ml-3">
+                <h5 class="text-black font-bold">50+</h5>
+                <p>Articles</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About end -->
     </header>
 
     <!-- Features start -->
-    <section id="features" class="features flex md:grid md:grid-cols-12  mx-8 lg:mx-24  mt-6 md:mt-16 py-8 md:py-16 place-content-center">
-        <div class="left-side hidden md:block col-span-7">
-            <img src="./src/img/illustration1.png" alt="Man with laptop">
+    <section
+      id="features"
+      class="features flex md:grid md:grid-cols-12 mx-8 lg:mx-24 mt-6 md:mt-16 py-8 md:py-16 place-content-center"
+    >
+      <div class="left-side hidden md:block col-span-7">
+        <img src="./src/img/illustration1.png" alt="Man with laptop" />
+      </div>
+      <div class="right-side xl:pt-10 col-span-5 md:block">
+        <div class="title mb-14 flex flex-col justify-center">
+          <h3
+            class="text-3xl md:text-5xl md:leading-relaxed text-black text-center md:text-left font-bold mb-6"
+          >
+            We Provide Many Features You Can Use
+          </h3>
+          <p class="mb-4">
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </p>
+          <ul>
+            <li class="flex mb-3">
+              <img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist" />
+              Group Discussion.
+            </li>
+            <li class="flex mb-3">
+              <img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist" />
+              Deep Question from psychologist
+            </li>
+            <li class="flex mb-3">
+              <img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist" />
+              Save your answer.
+            </li>
+            <li class="flex mb-3">
+              <img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist" />
+              Free consult with our psychologist
+            </li>
+          </ul>
         </div>
-        <div class="right-side xl:pt-10  col-span-5 md:block">
-            <div class="title mb-14  flex flex-col justify-center">
-                <h3 class="text-3xl md:text-5xl md:leading-relaxed text-black text-center md:text-left font-bold mb-6">We Provide Many Features You Can Use</h3>
-                <p class="mb-4">You can explore the features that we provide with fun and have their own functions each feature.</p>
-                <ul>
-                    <li class="flex mb-3"><img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist"> Powerfull online protection.</li>
-                    <li class="flex mb-3"><img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist"> Internet without borders.</li>
-                    <li class="flex mb-3"><img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist"> Supercharged VPN.</li>
-                    <li class="flex mb-3"><img class="mr-2" src="./src/img/Icon/ceklis.png" alt="ceklist"> No specific time limits.</li>
-                </ul>
-            </div>
-        </div> 
+      </div>
     </section>
     <!-- Features end -->
 
     <!-- Testimonials start -->
-    <section id="testimonials" class="testimonials">
-
-    </section>
+    <section id="testimonials" class="testimonials"></section>
     <!-- Testimonials end -->
 
     <!-- Get started start -->
     <section class="subscribe lg:mx-24">
-        <div class="bg-white py-10 px-10 md:px-20 shadow-lg md:rounded-xl">
-            <div class="flex flex-col justify-center md:grid md:grid-cols-12">
-                <div class="col-span-4 mb-4 md:mb-0">
-                    <h5 class="text-black text-3xl md:text-4xl font-bold mb-3">Subscribe Now for Get Special Features!</h5>
-                    <p>Let's subscribe with us and find the fun.</p>
-                </div>
-                <div class="col-span-6"></div>
-                <div class="col-span-2 flex items-center">
-                    <button class="w-60 h-14 p-2.5 bg-getS self-center">Get Started</button>
-                </div>
-            </div>
+      <div class="bg-white py-10 px-10 md:px-20 shadow-lg md:rounded-xl">
+        <div class="flex flex-col justify-center md:grid md:grid-cols-12">
+          <div class="col-span-4 mb-4 md:mb-0">
+            <h5 class="text-black text-xl md:text-2xl font-bold mb-3">
+              Let's started with us and get to know about yourself.
+            </h5>
+            <p></p>
+          </div>
+          <div class="col-span-6"></div>
+          <div class="col-span-2 flex items-center">
+            <button class="w-60 h-14 p-2.5 bg-getS self-center">
+              Get Started
+            </button>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Get started end -->
-    
+
     <!-- Footer start -->
     <footer class="text-center p-10">&copy; Alvin Triseptia Mairis 2021</footer>
     <!-- Footer end -->
 
     <script src="./src/app.js"></script>
-</body>
+  </body>
 </html>
